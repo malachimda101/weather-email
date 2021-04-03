@@ -9,7 +9,7 @@ import smtplib , ssl
 
 #get_city = str(input("Input a zipcode or city name to find the current weather of that area: "))
 
-api_key = "caecea5b70654d1baa4161300212203"
+api_key = "hidden"
 
 url = "http://api.weatherapi.com/v1/forecast.json?key=caecea5b70654d1baa4161300212203&q=06459&days=1&aqi=no&alerts=no"
 
@@ -48,11 +48,11 @@ elif response.status_code == 400:
 
 
 sender_email = "weather_email123@gmail.com"
-receiver_email = "malachimda101@gmail.com"
+receiver_email = "hidden"
 
 
 port_for_ssl = 465
-email_password = "weather_email!23"
+email_password = "hidden"
 context = ssl.create_default_context()
 
 with smtplib.SMTP_SSL("smtp.gmail.com", port_for_ssl, context=context) as server:
